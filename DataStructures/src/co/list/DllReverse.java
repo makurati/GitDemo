@@ -35,6 +35,11 @@ public class DllReverse {
 	
 	public void printList(){
 		
+		node n=head;
+		while(n!=null){
+			System.out.println(n.data);
+			n=n.next;
+		}
 		
 	}
 
@@ -43,7 +48,9 @@ public class DllReverse {
 		DllReverse dr=new DllReverse();
 		dr.head=new node(1);
 		dr.insert(2);
+		dr.printList();
 
+		
 	}
 
 }
